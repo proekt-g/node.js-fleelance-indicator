@@ -1,5 +1,12 @@
 const puppeteer = require("puppeteer");
 const Telegram = require("telegraf/telegram");
+const express = require("express");
+
+const app = express();
+
+app.listen(PORT, () => {
+  console.log("Server has been started...");
+});
 
 const PORT = process.env.PORT || 80;
 
