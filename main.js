@@ -57,10 +57,8 @@ let scrape = async (usernameKwork, passwordKwork, usernameHunt, passwordHunt, in
   const LIST_ALREDY_PROJECT = [];
 
   const browser = await puppeteer.launch({
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
     headless: true,
-    executablePath: "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
-    ignoreDefaultArgs: ["--disable-extensions"],
+    args: ["--no-sandbox"],
   });
 
   const FREELANCE_HUNT_PAGE = await browser.newPage();
