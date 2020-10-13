@@ -28,6 +28,7 @@ let scrape = async () => {
   const LIST_ALREDY_PROJECT = [];
 
   const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
     headless: false,
     executablePath: "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
     ignoreDefaultArgs: ["--disable-extensions"],
