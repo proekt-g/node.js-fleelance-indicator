@@ -1,6 +1,8 @@
 const puppeteer = require("puppeteer");
 const Telegram = require("telegraf/telegram");
 
+const PORT = process.env.PORT || 80;
+
 const telegram = new Telegram("825031954:AAEFGlsZUGF_1MU97Le05zvwS6Fb-hr7YSg");
 
 let scrape = async () => {
