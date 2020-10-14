@@ -93,9 +93,9 @@ let scrape = async (usernameKwork, passwordKwork, usernameHunt, passwordHunt, in
 
   await KWORK_PAGE.type(SELECTOR_KWORK_INPUT_PASSWORD, PASSWORD_KWORK, { delay: DELAY_PRINT_INPUT });
 
-  await KWORK_PAGE.waitForTimeout(1500);
-
   await KWORK_PAGE.click(SELECTOR_KWORK_LOG_BUTTON);
+
+  await KWORK_PAGE.waitForTimeout(1500);
 
   KWORK_PAGE.close();
 
