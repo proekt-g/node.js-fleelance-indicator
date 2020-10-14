@@ -23,7 +23,6 @@ rl.question("Username (kwork): ", (usernameKwork) => {
 });
 
 const telegram = new Telegram("825031954:AAEFGlsZUGF_1MU97Le05zvwS6Fb-hr7YSg");
-
 let scrape = async (usernameKwork, passwordKwork, usernameHunt, passwordHunt, indificator) => {
   const WIDTH_MONITOR = 1920,
     HEIGHT_MONITOR = 1080,
